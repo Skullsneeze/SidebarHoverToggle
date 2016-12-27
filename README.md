@@ -5,6 +5,9 @@ Opens the sidebar when hovering over your gutter, and closes it when hovering an
 
 This plugin only works in Sublime text 3 (Build 3124 >), since it uses the native `on_hover` command.
 
+Dependencies
+=====
+This package depends on the [MouseEventListener](https://github.com/SublimeText/MouseEventListener) package, which is available through package control.
 
 Installation
 =====
