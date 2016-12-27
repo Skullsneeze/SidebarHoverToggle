@@ -83,7 +83,7 @@ class SidebarToggleListener(sublime_plugin.EventListener):
     # use the MouseEventListener package to target mouse events for toggling the sidebar
     def on_pre_mouse_down(self, click):
         # only toggle on click if set by user
-        if not settings.get('sidebar_toggle_on_click', False):
+        if not settings.get('sidebar_toggle_on_click', True):
             return;
 
         # store mouse click location
