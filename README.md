@@ -29,7 +29,9 @@ Settings
 You can add the following parameters to your sublime Preferences to change the behaviour of this package:
 
 Set wether or not the sidebar is toggled with the *hover* event
+
 `"sidebar_toggle_on_hover": true`
 
 Set wether or not the sidebar is toggled with the *click* event
+
 `"sidebar_toggle_on_click": true`
