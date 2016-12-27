@@ -7,6 +7,7 @@ This plugin only works in Sublime text 3 (Build 3124 >), since it uses the nativ
 
 Dependencies
 =====
+
 This package depends on the [MouseEventListener](https://github.com/SublimeText/MouseEventListener) package, which is available through package control.
 
 Installation
@@ -22,7 +23,13 @@ Note that this plugin has an open pull request to be added to the Package contro
 6. Restart Sublime (quit the app on Mac OS (<kbd>cmd</kbd> + <kbd>q</kbd>)).
 
 
-Todo
+Settings
 =====
 
-* Find a way to change the interval of checking mouse hover, so that the command responds quicker.
+You can add the following parameters to your sublime Preferences to change the behaviour of this package:
+
+Set wether or not the sidebar is toggled with the *hover* event
+`"sidebar_toggle_on_hover": true`
+
+Set wether or not the sidebar is toggled with the *click* event
+`"sidebar_toggle_on_click": true`
