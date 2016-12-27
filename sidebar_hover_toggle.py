@@ -41,6 +41,10 @@ class SidebarToggleListener(sublime_plugin.EventListener):
     # listen for the hover command so we can toggle the sidebar when hovering over the gutter
     def on_hover(self, view, point, hover_zone):
 
+        # only toggle on hover if set by user
+        if not settings.get('sidebar_toggle_on_hover', False):
+            return;
+
         # check if the attribute exists to prevent AttributeError Exception
         if not hasattr(self, 'disable_auto_show'):
             self.disable_auto_show = False
@@ -78,6 +82,10 @@ class SidebarToggleListener(sublime_plugin.EventListener):
 
     # use the MouseEventListener package to target mouse events for toggling the sidebar
     def on_pre_mouse_down(self, click):
+        # only toggle on click if set by user
+        if not settings.get('sidebar_toggle_on_click', False):
+            return;
+
         # store mouse click location
         x_location = click['event']['x'];
         y_location = click['event']['y'];
