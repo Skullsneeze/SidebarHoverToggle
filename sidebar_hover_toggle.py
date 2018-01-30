@@ -57,7 +57,7 @@ class SidebarToggleListener(sublime_plugin.EventListener):
             view.window().set_sidebar_visible(True)
         else:
             # hide sidebar if auto hide is enabled
-            if not settings.get('sidebar_toggle_auto_hide', False):
+            if not settings.get('sidebar_toggle_auto_hide', True):
                 return;
             view.window().set_sidebar_visible(False)
 
