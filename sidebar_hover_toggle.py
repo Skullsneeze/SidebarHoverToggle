@@ -56,7 +56,9 @@ class SidebarToggleListener(sublime_plugin.EventListener):
             # hover over gutter. open the sidebar
             view.window().set_sidebar_visible(True)
         else:
-            # hide sidebar
+            # hide sidebar if auto hide is enabled
+            if not settings.get('sidebar_toggle_auto_hide', False):
+                return;
             view.window().set_sidebar_visible(False)
 
     # listen for every window_command so we know if a user opened the sdiebar manually
