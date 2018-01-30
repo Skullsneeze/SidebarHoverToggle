@@ -35,3 +35,8 @@ Set wether or not the sidebar is toggled with the *hover* event
 Set wether or not the sidebar is toggled with the *click* event
 
 `"sidebar_toggle_on_click": true`
+
+Set wether or not the sidebar should be automatically hidden
+
+`"sidebar_toggle_auto_hide": true`
+

@@ -1,0 +1,20 @@
+SidebarHoverToggle
+==========================
+
+Dependencies
+=====
+This package depends on the MouseEventListener package, which is available through package control.
+
+
+Settings
+=====
+You can add the following parameters to your sublime Preferences to change the behaviour of this package:
+
+Set wether or not the sidebar is toggled with the *hover* event
+"sidebar_toggle_on_hover": true
+
+Set wether or not the sidebar is toggled with the *click* event
+"sidebar_toggle_on_click": true
+
+Set wether or not the sidebar should be automatically hidden
+"sidebar_toggle_auto_hide": true
