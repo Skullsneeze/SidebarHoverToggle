@@ -32,7 +32,7 @@ Set wether or not the sidebar is toggled with the *hover* event
 
 `"sidebar_toggle_on_hover": true`
 
-Set wether or not the sidebar is toggled with the *click* event
+Set wether or not the sidebar is toggled with the *click* event. You must make 1 click to [**gutter**](Doc/gutter.jpg).
 
 `"sidebar_toggle_on_click": true`
 
