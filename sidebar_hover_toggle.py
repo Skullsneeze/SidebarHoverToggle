@@ -41,18 +41,18 @@ class SidebarToggleListener(sublime_plugin.EventListener):
     # listen for the hover command so we can toggle the sidebar when hovering over the gutter
     def on_hover(self, view, point, hover_zone):
 
-        # only toggle on hover if set by user
-        if not settings.get('sidebar_toggle_on_hover', False):
-            return;
-
-        # check if the attribute exists to prevent AttributeError Exception
-        if not hasattr(self, 'disable_auto_show'):
-            self.disable_auto_show = False
-        # if the auto show is disabled, stop executing
-        if self.disable_auto_show:
-            return
-
         if hover_zone == sublime.HOVER_GUTTER:
+            # only toggle on hover if set by user
+            if not settings.get('sidebar_toggle_on_hover', False):
+                return;
+
+            # check if the attribute exists to prevent AttributeError Exception
+            if not hasattr(self, 'disable_auto_show'):
+                self.disable_auto_show = False
+            # if the auto show is disabled, stop executing
+            if self.disable_auto_show:
+                return
+
             # hover over gutter. open the sidebar
             view.window().set_sidebar_visible(True)
         else:
